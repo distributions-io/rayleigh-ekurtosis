@@ -6,7 +6,7 @@ Ekurtosis
 
 The [ekurtosis](https://en.wikipedia.org/wiki/ekurtosis) for a [Rayleigh](https://en.wikipedia.org/wiki/Rayleigh_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="\operatorname{}\left[ X \right] = " data-equation="eq:ekurtosis">
+<div class="equation" align="center" data-raw-text="\gamma_2 = -\frac{6\pi^2 - 24\pi + 16}{(4 - \pi)^2} \approx 0.245" data-equation="eq:ekurtosis">
 	<img src="" alt="ekurtosis for a Rayleigh distribution.">
 	<br>
 </div>
@@ -252,7 +252,7 @@ var sigma,
 // Plain arrays...
 sigma = new Array( 10 );
 for ( i = 0; i < sigma.length; i++ ) {
-	sigma[ i ] = i;
+	sigma[ i ] = i + 1;
 }
 out = ekurtosis( sigma );
 
@@ -283,7 +283,7 @@ out = ekurtosis( sigma, {
 // Typed arrays...
 sigma = new Float64Array( 10 );
 for ( i = 0; i < sigma.length; i++ ) {
-	sigma[ i ] = i;
+	sigma[ i ] = i + 1;
 }
 out = ekurtosis( sigma );
 

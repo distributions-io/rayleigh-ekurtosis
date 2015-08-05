@@ -36,6 +36,7 @@ describe( 'number ekurtosis', function tests() {
 
 	it( 'should return `NaN` for invalid values of parameter sigma', function test() {
 		assert.isTrue( isnan( ekurtosis( -1 ) ) );
+		assert.isTrue( isnan( ekurtosis( 0 ) ) );
 	});
 
 });
