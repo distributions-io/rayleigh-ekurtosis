@@ -103,7 +103,10 @@ var sigma = [
 	{'x':[9,4]}
 ];
 
-var out = ekurtosis( sigma, 'x|1', '|' );
+var out = ekurtosis( sigma, {
+	'path': 'x|1',
+	'sep': '|'
+});
 /*
 	[
 		{'x':[9,~0.245]},
